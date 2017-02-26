@@ -1,0 +1,232 @@
+char c;
+
+void setup()
+{
+
+	Serial.begin(9600);
+
+	Serial.println("### HOMEAUTOMATION ###");
+
+	pinMode(13, OUTPUT);
+	pinMode(12, OUTPUT);
+	pinMode(11, OUTPUT);
+	pinMode(10, OUTPUT);
+	pinMode(9, OUTPUT);
+	pinMode(8, OUTPUT);
+	pinMode(7, OUTPUT);
+	pinMode(6, OUTPUT);
+	pinMode(5, OUTPUT);
+	pinMode(4, OUTPUT);
+	pinMode(3, OUTPUT);
+	pinMode(2, OUTPUT);
+
+}
+
+void loop()
+{
+
+	if (Serial.available() > 0)
+
+	{
+
+		c = Serial.read();
+
+		Serial.println(c);
+
+	}
+
+	else
+
+	{
+
+		delay(100);
+
+	}
+
+
+	//13on
+	if (c=='A')
+	{
+
+		Serial.println("on");
+
+		digitalWrite(13, HIGH);
+
+	}
+	//13off
+	if (c=='a')
+	{
+
+		Serial.println("off");
+
+		digitalWrite(13, LOW);
+
+	}
+	//12on
+	if (c=='B')
+	{
+
+		Serial.println("on");
+
+		digitalWrite(12, HIGH);
+
+	}
+	//12off
+	if (c=='b')
+	{
+
+		Serial.println("off");
+
+		digitalWrite(12, LOW);
+
+	}
+	//11on
+	if (c=='C')
+	{
+
+		Serial.println("on");
+
+		digitalWrite(11, HIGH);
+
+	}
+	//11off
+	if (c=='c')
+	{
+
+		Serial.println("off");
+
+		digitalWrite(11, LOW);
+
+	}
+	//10on
+	if (c=='D')
+	{
+
+		Serial.println("on");
+
+		digitalWrite(10, HIGH);
+
+	}
+	//10off
+	if (c=='d')
+	{
+
+		Serial.println("off");
+
+		digitalWrite(10, LOW);
+
+	}
+	//09on
+	if (c=='E')
+	{
+
+		Serial.println("on");
+
+		digitalWrite(9, HIGH);
+
+	}
+	//09off
+	if (c=='e')
+	{
+
+		Serial.println("off");
+
+		digitalWrite(9, LOW);
+
+	}
+	//08on
+	if (c=='F')
+	{
+
+		Serial.println("on");
+
+		digitalWrite(8, HIGH);
+
+	}
+	//08off
+	if (c=='f')
+	{
+
+		Serial.println("off");
+
+		digitalWrite(8, LOW);
+
+	}
+	//07on
+	if (c=='G')
+	{
+
+		Serial.println("on");
+
+		digitalWrite(7, HIGH);
+
+	}
+	//07off
+	if (c=='g')
+	{
+
+		Serial.println("off");
+
+		digitalWrite(7, LOW);
+
+	}
+	//06on
+	if (c=='H')
+	{
+
+		Serial.println("on");
+
+		digitalWrite(6, HIGH);
+
+	}
+	//06off
+	if (c=='h')
+	{
+
+		Serial.println("off");
+
+		digitalWrite(6, LOW);
+
+	}
+	//05on
+	if (c=='I'){
+
+	Serial.println("on");
+
+	digitalWrite(5, HIGH);
+
+	}
+	//05off
+	if (c=='i'){
+
+	Serial.println("off");
+
+	digitalWrite(5, LOW);
+
+	}
+	//Door open
+	if (c=='O'){
+	  
+	  Serial.println("Door is opened");
+	  
+	  digitalWrite(4, HIGH);
+	  delay(10000);
+	  digitalWrite(4,LOW);
+	}
+	  
+	if (c=='K'){
+	  
+	  Serial.println("Door is closed");
+	  
+	  digitalWrite(4,HIGH);
+	  digitalWrite(2, HIGH);
+	  digitalWrite(3, HIGH);
+	  delay(10000);
+	  digitalWrite(3, LOW);
+	  digitalWrite(2, LOW);
+	  digitalWrite(4, LOW);
+	}
+
+	c='\0';
+
+}

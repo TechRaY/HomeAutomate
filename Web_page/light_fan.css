@@ -1,0 +1,48 @@
+body
+{
+	background-image: url(path4.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	overflow:hidden;
+}
+p.light, p.fan
+		{
+			font-family:Ubuntu;
+			font-weight:bold;
+			color:#1565C0;
+			font-size:24;
+			position:relative;
+		}
+		p.light
+		{
+			top:32%;
+			left:38%;
+		}
+		p.fan
+		{
+			top:50%;
+			left:38%;
+		}
+		.imgClassL, .imgClassF 
+		{
+		position:absolute;
+		background-position:  0px 0px;
+		background-repeat: no-repeat;
+		width: 126px;
+		height: 126px;
+		border-radius: 10px;
+		background-color: none;
+		cursor: pointer;
+		outline: 0;
+		}
+		.imgClassL
+		{
+			top:25%;
+			left:50%;
+		}
+		.imgClassF
+		{
+			top:53%;
+			left:50%;
+		}

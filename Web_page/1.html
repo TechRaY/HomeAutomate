@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Home Automation</title>
+<link rel="stylesheet" type="text/css" href="Login.css"></link>
+<script>
+		function Validate()
+		{
+			if(document.f1.Username.value=='')
+			{
+					alert("You Must Have To Login First");
+					document.f1.Username.focus();
+			}
+		}
+	</script>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+	<div id="login">
+		<h1><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHome </strong> Access</h1>
+		<form name="f1"  method="post" action="Login.php">
+		<fieldset>
+			<p><input type="text" name="username"  value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p>
+			<p><input type="password" name="password" value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p>
+			<p><a href="#">Forgot Password?</a></p>
+			<p><input  value="Login"  type="submit"></p>
+		</fieldset>
+		</form>
+	</div> <!-- end login -->
+</body>
+</html>

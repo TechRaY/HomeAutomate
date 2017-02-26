@@ -1,0 +1,92 @@
+.bedroom1
+{
+	position:absolute;
+	top:5%;
+	left:5%;
+	height:44%;
+	width:20%;
+}
+.hall
+{
+	position:absolute;
+	top:5%;
+	left:26%;
+	height:80%;
+	width:39%;
+}
+.kitchen
+{
+	position:absolute;
+	top:5%;
+	left:66%;
+	height:34%;
+	width:30%;
+}
+.studyroom
+{
+	position:absolute;
+	top:50.5%;
+	left:5%;
+	height:35%;
+	width:27%;
+}
+.bedroom2
+{
+	position:absolute;
+	top:40.5%;
+	left:66%;
+	height:45%;
+	width:30%;
+}
+.door
+{
+	position:absolute;
+	top:89%;
+	left:5%;
+	height:10%;
+	width:91.5%;
+}
+#inner1
+{
+	box-shadow: 10px 10px 5px #888888;
+	opacity:1;
+	-webkit-transition: opacity 1s ;
+}
+#inner2
+{	
+	box-shadow: 10px 10px 5px #888888;
+	opacity:0;
+	-webkit-transition: opacity 1s ;
+    
+}
+}
+#dinner1
+{
+	box-shadow: 10px 10px 5px #888888;
+	opacity:1;
+	-webkit-transition: opacity 1s ;
+}
+#dinner2
+{	
+	
+	opacity:0;
+	-webkit-transition: opacity 1s ;
+    
+}
+#inner1:hover
+{
+	opacity:0;
+}
+#inner2:hover
+{
+	opacity:1;
+}
+#dinner1:hover
+{
+	opacity:0;
+}
+#dinner2:hover
+{
+	box-shadow: 0px 0px 0px #FFFFFF;
+	opacity:1;
+}
