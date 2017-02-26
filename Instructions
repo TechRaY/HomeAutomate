@@ -1,0 +1,4 @@
+The above  files
+      (i)check.php
+     (ii)control.php
+     (iii)controlcheck.php should be there in PHP folder for the website to work coz all the links in the html files are set as such.
